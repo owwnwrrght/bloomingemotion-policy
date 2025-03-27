@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Emotions - Support</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .gradient-header {
+            background: linear-gradient(90deg, rgba(72,198,128,1) 0%, rgba(94,169,230,1) 100%);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .accordion.active .accordion-content {
+            max-height: 500px;
+        }
+        .accordion-icon {
+            transition: transform 0.2s;
+        }
+        .accordion.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="gradient-header text-white py-16 px-4 md:px-8">
+        <div class="container mx-auto max-w-5xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Blooming Emotions Support</h1>
+            <p class="text-xl md:text-2xl">We're here to help you cultivate emotional wellness</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto max-w-5xl py-8 px-4 md:px-8">
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            <p class="mb-4">We're committed to providing you with the best support possible. If you have any questions, feedback, or need assistance, please reach out to us:</p>
+            <ul class="mb-4">
+                <li class="flex items-center py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                    <a href="mailto:owwnwrrght@gmail.com" class="text-blue-600 hover:underline">owwnwrrght@gmail.com</a>
+                </li>
+            </ul>
+            <p class="text-sm text-gray-600">We typically respond to all inquiries within 24-48 hours.</p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+            
+            <!-- Accordion items -->
+            <div class="space-y-4">
+                <!-- General Questions -->
+                <div class="accordion" onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg cursor-pointer">
+                        <h3 class="font-medium">What is Blooming Emotions?</h3>
+                        <svg class="accordion-icon h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="accordion-content px-4 pb-4">
+                        <p class="text-gray-700">Blooming Emotions is an app designed to help you track and visualize your emotional well-being through a garden metaphor. Each emotion you log grows as a flower in your digital garden, helping you recognize patterns and cultivate emotional awareness over time.</p>
+                    </div>
+                </div>
+
+                <div class="accordion" onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg cursor-pointer">
+                        <h3 class="font-medium">Is my emotional data private?</h3>
+                        <svg class="accordion-icon h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="accordion-content px-4 pb-4">
+                        <p class="text-gray-700">Yes, absolutely. Your emotional data is stored locally on your device and is not shared with our servers. We take your privacy seriously. The app uses HealthKit integration only with your explicit permission, and all health correlations are calculated on-device.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature Questions -->
+                <div class="accordion" onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg cursor-pointer">
+                        <h3 class="font-medium">How do I customize my garden?</h3>
+                        <svg class="accordion-icon h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="accordion-content px-4 pb-4">
+                        <p class="text-gray-700">You can customize your garden in several ways:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li>Tap "Edit Garden" to access the grid editor</li>
+                            <li>Use different terrain blocks (grass, water, dirt, sand)</li>
+                            <li>Add decorative elements like trees, bushes, and paths</li>
+                            <li>Switch between "Ground" and "Objects" layers to build your ideal garden</li>
+                            <li>Use presets for quick garden designs</li>
+                            <li>Toggle between Grid View and Image View to see different representations</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion" onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg cursor-pointer">
+                        <h3 class="font-medium">How do I create custom flowers?</h3>
+                        <svg class="accordion-icon h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="accordion-content px-4 pb-4">
+                        <p class="text-gray-700">When selecting an emotion, you'll see a paintbrush icon next to each emotion category. Tap the icon to draw your own flower for that emotion. You can also use the AI-assisted image generation (iOS 18.1+ required) to create beautiful, unique flowers based on your sketch.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion" onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg cursor-pointer">
+                        <h3 class="font-medium">What does the Health Insights feature do?</h3>
+                        <svg class="accordion-icon h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="accordion-content px-4 pb-4">
+                        <p class="text-gray-700">Health Insights analyzes correlations between your emotional state and health metrics like sleep, physical activity, heart rate, and mindfulness practice. This helps you understand how your physical well-being affects your emotions and vice versa. The feature requires HealthKit permission and works best when you regularly track both health data and emotions.</p>
+                    </div>
+                </div>
+
+                <!-- Troubleshooting Questions -->
+                <div class="accordion" onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg cursor-pointer">
+                        <h3 class="font-medium">My flowers disappeared after changing garden views</h3>
+                        <svg class="accordion-icon h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="accordion-content px-4 pb-4">
+                        <p class="text-gray-700">If flowers disappear when switching between Grid View and Image View, don't worry - your emotion data is still there. Try these steps:</p>
+                        <ol class="list-decimal pl-5 mt-2 space-y-1 text-gray-700">
+                            <li>Switch back to the previous view type</li>
+                            <li>Add a new emotion to refresh the flower display</li>
+                            <li>If problems persist, go to Settings and toggle between views again</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="accordion" onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg cursor-pointer">
+                        <h3 class="font-medium">The app doesn't show health correlations</h3>
+                        <svg class="accordion-icon h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="accordion-content px-4 pb-4">
+                        <p class="text-gray-700">For health correlations to work:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li>Ensure you've granted HealthKit permissions in Settings</li>
+                            <li>Track at least 5-10 emotions over several days</li>
+                            <li>Make sure your health data (sleep, steps, etc.) is being recorded</li>
+                            <li>For iOS 17+, verify that Health app access is enabled for Blooming Emotions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion" onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg cursor-pointer">
+                        <h3 class="font-medium">How do I reset all app data?</h3>
+                        <svg class="accordion-icon h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="accordion-content px-4 pb-4">
+                        <p class="text-gray-700">If you need to reset your app data, go to Settings → Data → Reset App Data. Note that this will permanently delete all your emotions, journal entries, garden customizations, and preferences. This action cannot be undone, so please be certain before proceeding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-6">Key Features</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-2">Emotion Tracking</h3>
+                    <p>Record your emotions with customizable intensity and personal notes. Choose from joy, sadness, anger, fear, peace, anxiety, hope, and more.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-2">Interactive Garden</h3>
+                    <p>Watch your emotions bloom as flowers in a customizable garden. Design your space with different terrains, plants, and decorative elements.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-2">Journal & Calendar</h3>
+                    <p>Track your emotional journey over time with the built-in journal and calendar views. Add detailed notes to capture the context of your feelings.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-2">Health Insights</h3>
+                    <p>Discover connections between your physical health and emotions through HealthKit integration (optional). See how sleep, activity, and more affect your emotional state.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-2">Growth Analysis</h3>
+                    <p>Understand your emotional patterns with sentiment tracking, correlation analysis, and personalized insights based on your data.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-lg mb-2">Goal Setting</h3>
+                    <p>Set emotional well-being goals and track your progress. Add reflections and milestones as you work toward better emotional health.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Troubleshooting Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-6">Troubleshooting Tips</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">App Performance Issues</h3>
+                    <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+                        <li>Close the app completely and restart it</li>
+                        <li>Check for iOS updates and update if available</li>
+                        <li>Ensure sufficient storage space is available on your device</li>
+                        <li>If problems persist, try uninstalling and reinstalling the app (note: this will delete your data unless you've enabled iCloud backup)</li>
+                    </ol>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-2">HealthKit Integration</h3>
+                    <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+                        <li>Go to your device's Settings app → Privacy & Security → Health</li>
+                        <li>Find Blooming Emotions in the list and tap it</li>
+                        <li>Ensure the necessary permissions are toggled on (Sleep, Steps, Heart Rate, etc.)</li>
+                        <li>Return to the app and refresh the Health Insights view</li>
+                    </ol>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Notification Issues</h3>
+                    <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+                        <li>Check that notifications are enabled in your device's Settings → Notifications → Blooming Emotions</li>
+                        <li>In the app, go to Settings → Notifications → Reminder Settings</li>
+                        <li>Verify your preferred times and frequency are set correctly</li>
+                        <li>Toggle notifications off and back on if needed</li>
+                    </ol>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Custom Drawings Not Saving</h3>
+                    <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+                        <li>Ensure you've tapped the "Done" button after completing your drawing</li>
+                        <li>Check that you have sufficient storage space on your device</li>
+                        <li>Try creating a simpler drawing if complex ones aren't saving</li>
+                        <li>Restart the app and try the drawing process again</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Feature Request Section -->
+        <section class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold mb-4">Feature Requests & Feedback</h2>
+            <p class="mb-4">We're constantly working to improve Blooming Emotions and value your input. If you have ideas for new features, improvements, or any other feedback, please let us know!</p>
+            <p class="mb-6">Email your suggestions to <a href="mailto:owwnwrrght@gmail.com" class="text-blue-600 hover:underline">owwnwrrght@gmail.com</a> with the subject "Blooming Emotions Feedback".</p>
+            
+            <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                <h3 class="font-bold text-lg mb-2 text-blue-800">Coming Soon</h3>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Advanced emotion pattern recognition</li>
+                    <li>Additional garden elements and themes</li>
+                    <li>Community gardens for shared emotional support</li>
+                    <li>More detailed health correlation insights</li>
+                    <li>Custom emotion categories</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 md:px-8 mt-12">
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">Blooming Emotions</h3>
+                    <p class="text-gray-300">Grow your emotional awareness</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-6">
+                    <a href="index.html" class="text-gray-300 hover:text-white">Support</a>
+                    <a href="privacy.html" class="text-gray-300 hover:text-white">Privacy Policy</a>
+                    <a href="mailto:owwnwrrght@gmail.com" class="text-gray-300 hover:text-white">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400 text-sm">
+                <p>© 2025 Blooming Emotions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleAccordion(element) {
+            element.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
